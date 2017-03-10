@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="cb4625cc-0eda-45de-aaf9-4f74a164b53c" activeEnvironment="Default" name="OKCS FRAMEWORK" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="deaa5178-3bbd-4968-a8cd-3e0b0a11d5f0" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://slc05kvr.us.oracle.com:7202" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_data#data4}</con:endpoint><con:endpoint>http://slc05kvr.us.oracle.com:7202</con:endpoint><con:endpoint>https://17-5-base-irs.dv.lan/</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="Authorize" path="/km/api/latest/auth/integration/authorize" id="8c9fbf0c-5bf3-4d9b-b25c-4bbb4f2f0cbb"><con:settings/><con:parameters/><con:method name="Authorize" id="924ac032-f868-43c1-9f80-445e4e9e1bc0" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>IntegrationAuthInfo</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500 404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 405</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="c1c0df32-6615-4bc7-a004-cd7a3dd02874" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot;17_5_base &quot;,&quot;localeId&quot;:&quot;en_US&quot;}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>{"login":"iu_agent_desktop","password":"A006872CE2804DC3BE9995913285A889","siteName":"17_5_base"}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/integration/authorize</con:originalUri><con:credentials><con:username>administrator</con:username><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="9af4e619-4f14-420b-a723-70b013f46708" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://slc05kvr.us.oracle.com:7202" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_date#data4}</con:endpoint><con:endpoint>http://slc05kvr.us.oracle.com:7202</con:endpoint><con:endpoint>https://17-5-base-irs.dv.lan/</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://day106-161100-sql-197h-irs.dv.lan</con:endpoint><con:endpoint>https://day116-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-qp.dv.lan</con:endpoint><con:endpoint>https://day163-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day167-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day246-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="Authorize" path="/km/api/latest/auth/authorize" id="fe9f8af9-b68c-43cc-b9a5-2b8c820aa6ab"><con:settings/><con:parameters/><con:method name="Authorize" id="4d909106-cc4d-4400-8ce4-6b565a6d28b8" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 403 500</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>AuthInfo</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="7350ec9f-d158-4fcd-808e-67e4e0e0b69a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot; 17_5_base&quot;,&quot;integrationUserToken&quot;:&quot;ZGF5MTE2XzE2ODAxX3NxbF8yNTRoOjc5SXhsenFtcGJyWjl5Yk9JNFJTWG1vVWxBNjNVVkNmZHJiWms2dHBxanZpUWE5KzFKTkYvOUY5aTlzMjRXbUZtMXVMR3ZwRWZrbzZia0FsSVBPUVhFUUJNeXkrNG90YXd5TkJ1ZGxESG9FdngyRWREWXE5ci9jSEJvWlhKSzViTmlZZ2toc25HVlBuaFk3K3hzbUI5T3dsVG1pTjFkWFc5Ry9mcDl3Z3VXOHMvODRvWmVNZCszd2RnRzRkMktEQg==&quot;}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>userName=user1&amp;password=Welcome1&amp;siteName=day116_16801_sql_254h&amp;userExternalType=ACCOUNT</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/authorize</con:originalUri><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="5e765450-dc3a-412c-83d8-0285d5f2cffe" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://slc05kvr.us.oracle.com:7202" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_date#data4}</con:endpoint><con:endpoint>http://slc05kvr.us.oracle.com:7202</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://day106-161100-sql-197h-irs.dv.lan</con:endpoint><con:endpoint>https://day116-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-qp.dv.lan</con:endpoint><con:endpoint>https://day163-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day167-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day246-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="Users" path="/km/api/latest/users" id="783f8f0c-c684-48f7-9d07-33fa71e277f8"><con:settings/><con:parameters><con:parameter><con:name>mode</con:name><con:value>FULL</con:value><con:style>QUERY</con:style><con:default>FULL</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Users" id="b8427ad9-c7ed-4156-840c-c0b2eb954c89" method="GET"><con:settings><con:setting id="RecordResponseRepresentations">false</con:setting></con:settings><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>ResultList</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain</con:mediaType><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="get" id="f8173e86-0d9a-45ef-b8dd-3da18e5a4df8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;integrationUserToken&quot;:&quot;ZnVzaW9uOmZlOUNHSk01R2pNREhjbTA4QUtjYWt4QTdtUEZsUlRXV01CT3lHZk91UEJLTWVkcmhpRVp4azBmamtHMmpmbkc0SkJUTURFZ2RiSUpiQ0hYK1BiaWpzeUFKVWFkNTliR3ZTYVVTVGxSWWVmZ2tKd0dWTHM3aDVQbG1pVDdpblZGT2JEN285V2ZGSFQ3QkRSbjNYR3crUT09&quot;,&quot;userToken&quot;:&quot;SynygOR1lUWzAts2s2F5TFF8Cznb0J4UOVRR+tuUiXa3/O0T/e6GDgwRer4GeogZo/3jmqZCORc69l87q3X2VfttnlHIuXs2T681DUc4NDCSb8fh8YiN9VuKzAuDKjlLcB/6Q15nUFoaG1Kz4WgXGQ==&quot;}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting><con:setting id="RecordRequestRepresentations">false</con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/users</con:originalUri><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>mode</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b95a8f91-da88-404f-b2eb-848ba5ea7f43" wadlVersion="http://wadl.dev.java.net/2009/02" name="5960 - with Excel" type="rest" definitionUrl="mike" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/></con:interface><con:interface xsi:type="con:RestService" id="691292e8-90ad-4bda-855e-af7d41d7fb39" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://day106-161100-sql-197h-irs.dv.lan" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_date#data4}</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://apitoken-irs.qb.lan</con:endpoint><con:endpoint>https://day106-161100-sql-197h-irs.dv.lan</con:endpoint><con:endpoint>https://day116-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day155-16801-sql-254h-qp.dv.lan</con:endpoint><con:endpoint>https://day163-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day167-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day246-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="ALl Content" path="/km/api/latest/content" id="b5bf6b0e-362e-4e59-bc84-cdff111c653c"><con:settings/><con:parameters><con:parameter><con:name>mode</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>q</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:resource name="getContent_docID" path="docId/${integration_data#data5}" id="b730b99c-7455-487d-96aa-3da38027e8dc"><con:settings/><con:parameters/><con:method name="Method 1" id="9b7cc4a4-c2fe-4744-bba4-22b3ad54efbd" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>Content</con:element></con:representation><con:request name="Get Content_DocID" id="2df2bc46-0dc5-4ab6-8e3b-f3a0e3303797" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_date#data4}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>mode</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:method name="" id="880fd939-0057-4012-98e3-5a2d4dfa3c24" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:con1="http://day106-161100-sql-197h-irs.dv.lan/km/api/content">con1:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>500</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>ResultList</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:con1="http://day106-161100-sql-197h-irs.dv.lan/km/api/content">con1:Response</con:element></con:representation><con:request name="get_all_content" id="82107b8f-a9f9-440e-b927-ce4020099a5a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>http://day106-161100-sql-197h-irs.dv.lan/km/api/latest/content</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="mode" value="FULL" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>mode</con:entry><con:entry>q</con:entry></con:parameterOrder></con:request><con:request name="q query" id="82107b8f-a9f9-440e-b927-ce4020099a5a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>http://day106-161100-sql-197h-irs.dv.lan/km/api/latest/content</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="mode" value="FULL"/>
+  <con:entry key="q" value="documentId eq 'FA1'"/>
+</con:parameters><con:parameterOrder><con:entry>mode</con:entry><con:entry>q</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="1edba2e9-fe84-4f09-b23c-729918088495" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://day246-16801-sql-254h-irs.dv.lan" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_date#data4}</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://day246-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="" path="/km/api/latest/categories" id="78fb4b54-d89f-41cb-9df4-a41ccccd2213"><con:settings/><con:parameters/><con:method name="" id="b880df18-2d59-44f9-935c-76bcfc304a76" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="https://day246-16801-sql-254h-irs.dv.lan/km/api/latest/categories">cat:Response</con:element></con:representation><con:request name="categories" id="4008b4de-8bbb-4053-88c5-899f562ad5bb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="52243c56-4171-4826-834b-31008e45238b" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://day246-16801-sql-254h-irs.dv.lan" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_date#data4}</con:endpoint><con:endpoint>https://analytics-172-114h-irs.dv.lan</con:endpoint><con:endpoint>https://day246-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day367-16801-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day566-16501-sql-254h-irs.dv.lan</con:endpoint><con:endpoint>https://day600-16501-sql-254h-irs.dv.lan</con:endpoint></con:endpoints><con:resource name="" path="/km/api/latest/contentTypes" id="d39fe020-e01c-45c9-91a4-3405afd7051b"><con:settings/><con:parameters/><con:method name="" id="4372058b-8496-46d1-93c7-c5bb83f97b99" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:con1="https://day566-16501-sql-254h-irs.dv.lan/km/api/latest/contentTypes">con1:Response</con:element></con:representation><con:request name="content_types" id="41387455-6169-45b9-804b-4865d826d4ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="965ce34d-5a0b-4df7-ad20-ba80569fcf0a" wadlVersion="http://wadl.dev.java.net/2009/02" name="" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_data#data4}</con:endpoint><con:endpoint>https://apitoken-irs.qb.lan</con:endpoint></con:endpoints><con:resource name="Add Content" path="/km/api/latest/content?publish=TRUE" id="158aa05c-592d-4885-b2c7-101255097169"><con:settings/><con:parameters><con:parameter><con:name>publish</con:name><con:value>integration_data#data4</con:value><con:style>TEMPLATE</con:style><con:default>integration_data#data4</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="$integration_data#data4" id="281927f0-dd96-43ab-bc2a-d243d9232799" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>500 400</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>201</con:status><con:params/><con:element>Content</con:element></con:representation><con:request name="Add Content" id="f2b06a84-20d9-4f87-99ca-a49c27e95702" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request><![CDATA[<Content>
+    <locale>
+        <recordId>en_US</recordId>
+    </locale>		
+   <contentType>
+         <recordId>04007203d961fad015a7f23da09007e63</recordId>
+         <referenceKey>FAQ</referenceKey>
+         <name>FAQ</name>
+        <description>Token test from API</description>
+    </contentType>
+    <priority>PRIORITY_0</priority>
+    <displayStartDate>2016-08-11T07:17:00-0600</displayStartDate>
+	<displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+    <published>false</published>
+    <pending>false</pending>
+    <checkedOut>false</checkedOut>
+    <displayPosition>HISTORICAL_USEFULNESS</displayPosition>	
+     <xml><FAQ><IPHONE_NOT_REBOOTING>Hold Power Button for 5 secs ... Testing again 2</IPHONE_NOT_REBOOTING></FAQ></xml>	  
+    <isForEdit>true</isForEdit>
+    <categories/>
+    <userGroups/>	
+      <views>
+         <ViewKey>
+            <recordId>04007203d961fad015a7f23da09007e8d</recordId>
+            <referenceKey>TEST_VIEW</referenceKey>
+            <name>test_view</name>
+        </ViewKey>
+    </views>	
+</Content>
+]]></con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="publish" value="TRUE" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>publish</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="5df91e62-408c-4cbc-a460-a85f56e05eca" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://apitoken-irs.qb.lan" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${integration_data#data4}</con:endpoint><con:endpoint>https://apitoken-irs.qb.lan</con:endpoint></con:endpoints><con:resource name="Update_Edit Content" path="/km/api/latest/content/${integration_data#recordid}" id="39d3fcfd-6685-40a1-b3d5-14e4d03d0057"><con:settings/><con:parameters/><con:method name="" id="9911fe95-be9a-454a-865d-fcf7f7afd428" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/><con:element>Content</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>405 500 403 400 409</con:status><con:params/><con:element>ErrorResponse</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/><con:element>Content</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>text/xml</con:mediaType><con:params/><con:element>Content</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:element>Content</con:element></con:representation><con:request name="Edit Content" id="48a184fc-aac9-4796-8a39-1a08b4729621" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;integrationUserToken&quot;:&quot;YXBpdG9rZW46YjFjNmpUVkxydVlsSFNmQjVZSjVLamUyK0REQ2hWRGFCdnBVdzdDcmZ4VjVyWUl5aDZ2ME1oZ2xwVlRWcE9WdlBqUXFEZDdoTG93cWtDTHZQbmNnOFVyWUlsVzdDME51eUF4R2lnc1N0TU9tcG92cnI2ZG9aZkNVVFVnQ3NGTXdiZWNMZVRONmo5T1FpOG82dUtrRWRBPT0=&quot;,&quot;userToken&quot;:&quot;Zu/1YG/9MDXJniFoZjqIDt9uSUFwonWj8Chwhpc08IrM5UIi7a6LeO7fhS2KOK18wTL0G9iCU2peQeZmzymFpA28wJY5DIU0C5cTtPc019Rk21N63REcndkKPCqxbueaosJyDb4ex0pb4XOTLwqA8A==&quot;}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>https://apitoken-irs.qb.lan</con:endpoint><con:request><![CDATA[<Content>
+	<recordId>04003723684ad7015a89da9f18007f21</recordId>
+      <versionId>04003723684ad7015a89da9f18007f25</versionId>
+      <documentId>AP4</documentId>      
+      <version>1.0</version>
+      <answerId>1000016</answerId>
+
+ 	<contentType>
+         <recordId>04003723684ad7015a89da9f18007fe9</recordId>
+         <referenceKey>APPLE</referenceKey>
+         <name>APPLE</name>
+    </contentType>
+	
+	<locale>
+		<recordId>en_US</recordId>
+	</locale>
+	
+	<dateModified>2017-03-02T04:25:52-0700</dateModified>
+	<priority>PRIORITY_0</priority>
+      <createDate>2017-03-02T04:25:52-0700</createDate>
+      <lastModifiedDate>2017-03-02T04:25:52-0700</lastModifiedDate>
+      <dateAdded>2017-03-02T04:25:52-0700</dateAdded>
+      <displayStartDate>2017-03-02T04:25:00-0700</displayStartDate>
+      <displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+ 
+ 	
+	 <published>false</published>
+	<checkedOut>false</checkedOut>
+
+<xml><APPLE><TITLE>Update</TITLE><DESCRIPTION>&lt;p>HI hI&lt;/p></DESCRIPTION> </APPLE> </xml>
+
+	<isForEdit>true</isForEdit>
+	<categories />
+	<userGroups />
+	
+	<views>
+         <ViewKey>
+            <recordId>04007203d961fad015a7f23da09007e8d</recordId>
+            <referenceKey>TEST_VIEW</referenceKey>
+            <name>test_view</name>
+		</ViewKey>
+	</views>
+	
+</Content>
+ 
+]]></con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="61d7b2e3-854e-4934-837c-afc5f854e80d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://Create_POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://Create_POST</con:endpoint></con:endpoints><con:resource name="Base" path="/services/rest/connect/v1.3/" id="39ba6e08-a857-4825-91f7-572edad9f52c"><con:settings/><con:parameters/><con:resource name="Create_Products" path="serviceProducts" id="52acc34c-668c-4dfe-9432-4a7c2b0c9350"><con:settings/><con:parameters/><con:resource name="adminVisibleInterfaces" path="${counter#id}/adminVisibleInterfaces" id="a1f88540-55e2-4563-a9c1-c152e358eab2"><con:settings/><con:parameters/><con:method name="Method 1" id="32bc6e72-6a84-4091-956c-19ae63796dc9" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="e4f06060-088a-4f75-bad8-14704f6519dd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://Create_POST</con:endpoint><con:request>{"id":1}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="endUserVisibleInterfaces" path="${counter#id}/endUserVisibleInterfaces" id="f9c2de9f-ac90-46d0-9dcf-03253930ea69"><con:settings/><con:parameters/><con:method name="Method 1" id="b3fc630c-d885-4a3d-8e62-8215fac37d87" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="8249f40b-2e79-4c66-bd20-1ab2aaf24c4f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://Create_POST</con:endpoint><con:request>{"id":1}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:method name="Create_Products" id="876ad1a0-cbd4-483e-8065-ba314f992130" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Create_Products" id="4d9cd747-a691-4269-bee2-136ca22373ba" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://Create_POST</con:endpoint><con:request>{"names":[{"labelText":"Products Deepak","language": {"id":1}}]}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="" id="4c971319-9c75-4b8a-b456-09524ace85fb" method="POST"><con:settings/><con:parameters/><con:request name="Base" id="b5cf5e11-091a-4a16-8cf2-e8d896fb7dcb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://Create_POST</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="13bf0385-7eab-47ab-89ef-6dc8192a9311" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3d89e904-b97e-406d-93e5-e7633d59d5bd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GenericKmauthtoken" searchProperties="true"><con:settings/><con:testStep type="groovy" name="initialization" id="2e7b3463-b83e-47a9-b2f3-5f0f5a4c8300"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=new ArrayList&lt;String>();
+context.setProperty( "kmauthtoken_list", kmauthtoken_list)
+
+Count_Property.setPropertyValue("iCurrent_count","1")
+Count_Property.setPropertyValue("excel_path","D:\\Work_related\\soapUI\\Framework\\OKCS Framework\\framework_v8\\GetContent.xls")  // Excel File path in Computer
+//D:\\Work_related\\161207-000264\\framework.xls
+Count_Property.setPropertyValue("iTotal_count","")
+
+Count_Property.setPropertyValue("excel_integration_sheet","integration")  		// Sheet in Excel holding Integration Data
+Count_Property.setPropertyValue("excel_authentication_sheet","authentication")	// Sheet in Excel holding Auth Data
+Count_Property.setPropertyValue("integration_PropertyFile","integration_data")	// Property file name in SoapUI holding integration data
+Count_Property.setPropertyValue("authentication_PropertyFile","authentication_data")	// Property file name in SoapUI holding Auth data
+Count_Property.setPropertyValue("Result_Excel","D:\\GetContent_Result.xls")	
+testRunner.testCase.testSuite.setPropertyValue( "Testname",context.testCase.getLabel()) // Store Testname under @ testsuite level to use by other test cases in our case Library 
+log.info(testRunner.testCase.testSuite.getPropertyValue("Testname"))
+//Count_Property.setPropertyValue("Testname",context.testCase.getLabel())
+//com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "Testname", context.testCase.getLabel() )
+//log.info context.testCase.getTestStepAt(context.getCurrentStepIndex()).getLabel()   //get Current test case name
+//
+//def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+//library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel 
+//library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property 
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Start_here" id="2aad5e56-4d46-4e18-993a-ec4fa2fbe74e"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+//----------------------------------------------------------
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+String excel_auth=Count_Property.getPropertyValue("excel_authentication_sheet")		
+String integration_PropertyFile=Count_Property.getPropertyValue("integration_PropertyFile")//Count holde integration_data
+String auth_PropertyFile=Count_Property.getPropertyValue("authentication_PropertyFile")//Count holds authentication_data
+ArrayList&lt;String> lData;
+int row=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+
+def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel and store in  context
+library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property and stora in context
+
+def excel_operation=context.excel		//excel= Excel object instance stored in context  (ref Excel file in library for more info)
+def Property_operation=context.Property  //Property= Property_lib object instance stored in context (ref Property_lib file for more info)
+
+//----------------------------------------------------------Read 1 row at a time 
+
+Property_operation.Total_Count("iTotal_count",excel_operation.total_rows(excel_integration)) // Count no of rows in -excel_integration_sheet sheet and save in var
+lData=excel_operation.read_row(excel_integration,row)
+Property_operation.set_data(lData,integration_PropertyFile)  //Copys excel row from an array to "integration_data" property file
+lData=excel_operation.read_row(excel_auth,row)
+Property_operation.set_data(lData,auth_PropertyFile)
+</script></con:config></con:testStep><con:testStep type="properties" name="Count" id="14305952-2f6e-4815-86ff-e748df92099b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>excel_authentication_sheet</con:name><con:value>authentication</con:value></con:property><con:property><con:name>authentication_PropertyFile</con:name><con:value>authentication_data</con:value></con:property><con:property><con:name>iCurrent_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_path</con:name><con:value>D:\Work_related\soapUI\Framework\OKCS Framework\framework_v6\GetContent.xls</con:value></con:property><con:property><con:name>iTotal_count</con:name><con:value>5</con:value></con:property><con:property><con:name>excel_integration_sheet</con:name><con:value>integration</con:value></con:property><con:property><con:name>integration_PropertyFile</con:name><con:value>integration_data</con:value></con:property><con:property><con:name>data0</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data1</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data2</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data3</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data4</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>Result_Excel</con:name><con:value>D:\GetContent_Result.xls</con:value></con:property><con:property><con:name>integration_token</con:name><con:value>"YXBpdG9rZW46V2lqYVl3ZDJPcmJHeElydWNsb3pUSkhwcElFRXFaVm84MS83VENwZi9Semd3cXZSOUZjaWFTMVZmd3V0M0pCV1lyK0Z5VGpKeFVBZzJCZUcrdXRFSnRhaEtXTnhVTW0wRUJYdHFBRlZlWTZIMlUwdVhjekdJOVAwVFVqUHIxQ0RXd25tR2pyb016dFlKMWR1Z0E0RnZZMjA4QWtQYmg5VEVBTDBwdTFTQk5vPQ=="</con:value></con:property><con:property><con:name>authentication_token</con:name><con:value>"nP1PJxgzf9KBgy2TmvQCqS579uAyb0tFZbHBOx7//QB+7gnF6FTKzdngEEG5pXp4lAkzfPqqnxNRvcCWwSO1hcVJJXNtIk2rI2cRHC5bWOOwiiS6TtR8V1Oyg+HudjxB36vggQpQmZstCXVA1LSKhQ=="</con:value></con:property><con:property><con:name>kmauthtoken</con:name><con:value>{"integrationUserToken":"YXBpdG9rZW46V2lqYVl3ZDJPcmJHeElydWNsb3pUSkhwcElFRXFaVm84MS83VENwZi9Semd3cXZSOUZjaWFTMVZmd3V0M0pCV1lyK0Z5VGpKeFVBZzJCZUcrdXRFSnRhaEtXTnhVTW0wRUJYdHFBRlZlWTZIMlUwdVhjekdJOVAwVFVqUHIxQ0RXd25tR2pyb016dFlKMWR1Z0E0RnZZMjA4QWtQYmg5VEVBTDBwdTFTQk5vPQ==","userToken":"nP1PJxgzf9KBgy2TmvQCqS579uAyb0tFZbHBOx7//QB+7gnF6FTKzdngEEG5pXp4lAkzfPqqnxNRvcCWwSO1hcVJJXNtIk2rI2cRHC5bWOOwiiS6TtR8V1Oyg+HudjxB36vggQpQmZstCXVA1LSKhQ=="}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="integration_data" id="7b1d3c8f-5cf1-4073-8efe-1138b822a638"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>iu_agent_desktop</con:value></con:property><con:property><con:name>data2</con:name><con:value>9BD344B36A404583BDBBD472C0976BF2</con:value></con:property><con:property><con:name>data3</con:name><con:value>apitoken</con:value></con:property><con:property><con:name>data4</con:name><con:value>https://apitoken-irs.qb.lan</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request1</con:value></con:property><con:property><con:name>data5</con:name><con:value>FA1</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="authentication_data" id="136f9277-4dce-4e08-94ba-8b9d639c23ae"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>Admin</con:value></con:property><con:property><con:name>data2</con:name><con:value>Welcome1</con:value></con:property><con:property><con:name>data3</con:name><con:value>apitoken</con:value></con:property><con:property><con:name>data4</con:name><con:value>ACCOUNT</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request2</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="token" id="2975d7f6-2fa8-4e80-b51d-0f64519bd40d"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/integration/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="token" id="c1c0df32-6615-4bc7-a004-cd7a3dd02874" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="{&amp;quot;siteName&amp;quot;:&amp;quot;${integration_data#data3}&amp;quot;}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>{"login":"${integration_data#data1}","password":"${integration_data#data2}","siteName":"${integration_data#data3}"}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/integration/authorize</con:originalUri><con:assertion type="Simple Contains" id="778a922e-cf5f-49bc-b883-7443c2f26235" name="authenticationToken"><con:configuration><token>authenticationToken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GetToken" id="73bf59d8-05cc-43ba-b14f-e46e67f80074"><con:settings/><con:config><script>
+String int_token
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("token").getPropertyValue("response")
+def result=new XmlSlurper().parseText(responseContent)
+int_token="\"${result}\""
+//log.info (int_token)
+Count_Property.setPropertyValue("integration_token",int_token.toString())
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Authorize" id="7057fff9-36fa-473f-9a21-77423ac19a97"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authorize" id="7350ec9f-d158-4fcd-808e-67e4e0e0b69a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot;${authentication_data#data3}&quot;,&quot;integrationUserToken&quot;:${Count#integration_token}}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>userName=${authentication_data#data1}&amp;password=${authentication_data#data2}&amp;siteName=${authentication_data#data3}&amp;userExternalType=${authentication_data#data4}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/authorize</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a56208a0-0088-4ac6-9ac5-b8bafd83f91c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="00546b38-7e77-4609-afbc-5091608ab8a0" name="recordId"><con:configuration><token>recordId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="uToken" id="88f1a759-b39c-40c6-8521-7a86e0502c87"><con:settings/><con:config><script>import javax.xml.xpath.*
+import javax.xml.parsers.DocumentBuilderFactory
+
+String user_token,int_token;
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("Authorize").getPropertyValue("response")
+def AuthInfo=new XmlSlurper().parseText(responseContent)
+String sFull_auth=AuthInfo.authenticationToken[0].toString()
+String[] sa_Full_auth=sFull_auth.split(",")
+for(int i=0;i&lt;=sa_Full_auth.length-1;i++){			
+	if(sa_Full_auth[i].contains("userToken")){
+		//log.info(s2[i])
+		sValid_token1=sa_Full_auth[i]
+		break
+	}
+}
+
+String[] sValid_token_final=sValid_token1.split(":")
+user_token=sValid_token_final[1]
+int_token=Count_Property.getPropertyValue("integration_token")
+
+Count_Property.setPropertyValue("authentication_token",user_token.toString())
+Count_Property.setPropertyValue("kmauthtoken","{\"integrationUserToken\":"+int_token+",\"userToken\":"+user_token+"}")
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5df7019d-e13a-411b-bdb5-b7453cb72aaf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET test cases" searchProperties="true"><con:settings/><con:testStep type="groovy" name="initialization" id="1c05d9b4-d611-402a-befe-50bb73aefa90"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=new ArrayList&lt;String>();
+context.setProperty( "kmauthtoken_list", kmauthtoken_list)
+
+Count_Property.setPropertyValue("iCurrent_count","1")
+Count_Property.setPropertyValue("excel_path","D:\\Work_related\\sanitytest_charith\\GetContent.xls")  // Excel File path in Computer
+//D:\\Work_related\\161207-000264\\framework.xls
+Count_Property.setPropertyValue("iTotal_count","")
+
+Count_Property.setPropertyValue("excel_integration_sheet","integration")  		// Sheet in Excel holding Integration Data
+Count_Property.setPropertyValue("excel_authentication_sheet","authentication")	// Sheet in Excel holding Auth Data
+Count_Property.setPropertyValue("integration_PropertyFile","integration_data")	// Property file name in SoapUI holding integration data
+Count_Property.setPropertyValue("authentication_PropertyFile","authentication_data")	// Property file name in SoapUI holding Auth data
+Count_Property.setPropertyValue("Result_Excel","D:\\GetContent_Result.xls")	
+testRunner.testCase.testSuite.setPropertyValue( "Testname",context.testCase.getLabel()) // Store Testname under @ testsuite level to use by other test cases in our case Library 
+log.info(testRunner.testCase.testSuite.getPropertyValue("Testname"))
+//Count_Property.setPropertyValue("Testname",context.testCase.getLabel())
+//com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "Testname", context.testCase.getLabel() )
+//log.info context.testCase.getTestStepAt(context.getCurrentStepIndex()).getLabel()   //get Current test case name
+//
+//def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+//library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel 
+//library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property 
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Start_here" id="d2792f71-cb24-451b-b39f-81353b82ff7c"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+//----------------------------------------------------------
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+String excel_auth=Count_Property.getPropertyValue("excel_authentication_sheet")		
+String integration_PropertyFile=Count_Property.getPropertyValue("integration_PropertyFile")//Count holde integration_data
+String auth_PropertyFile=Count_Property.getPropertyValue("authentication_PropertyFile")//Count holds authentication_data
+ArrayList&lt;String> lData;
+int row=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+
+def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel and store in  context
+library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property and stora in context
+
+def excel_operation=context.excel		//excel= Excel object instance stored in context  (ref Excel file in library for more info)
+def Property_operation=context.Property  //Property= Property_lib object instance stored in context (ref Property_lib file for more info)
+
+//----------------------------------------------------------Read 1 row at a time 
+
+Property_operation.Total_Count("iTotal_count",excel_operation.total_rows(excel_integration)) // Count no of rows in -excel_integration_sheet sheet and save in var
+lData=excel_operation.read_row(excel_integration,row)
+Property_operation.set_data(lData,integration_PropertyFile)  //Copys excel row from an array to "integration_data" property file
+lData=excel_operation.read_row(excel_auth,row)
+Property_operation.set_data(lData,auth_PropertyFile)
+</script></con:config></con:testStep><con:testStep type="properties" name="Count" id="8dc400b2-2b76-47d0-ac8b-eef823af1bcd"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>excel_authentication_sheet</con:name><con:value>authentication</con:value></con:property><con:property><con:name>authentication_PropertyFile</con:name><con:value>authentication_data</con:value></con:property><con:property><con:name>iCurrent_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_path</con:name><con:value>D:\Work_related\sanitytest_charith\GetContent.xls</con:value></con:property><con:property><con:name>iTotal_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_integration_sheet</con:name><con:value>integration</con:value></con:property><con:property><con:name>integration_PropertyFile</con:name><con:value>integration_data</con:value></con:property><con:property><con:name>data0</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data1</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data2</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data3</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data4</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>Result_Excel</con:name><con:value>D:\GetContent_Result.xls</con:value></con:property><con:property><con:name>integration_token</con:name><con:value>"b2tjc19teXNxbDVfNzpNblVkUWZydTJvS1ZzZVM3d3hpUno4WVdzNDZEMkE2Z1JJRHQ1c3pvQnkvUVQwY2YzRWhFcThDbTVnckp3TDJQR0Z4eG9FY3pvWEFuRTVTdm1MUzl0T1dJV0FYL2poTlNpdjhteWF2M1FtanpQRFRtTWdXbWxYaVpZQjQ1T0FCRWQxSkFuMkxFZkZXMythaFM3YnRubkNtTXpOTDB4WVBscWEwR215T1lMTFU9"</con:value></con:property><con:property><con:name>authentication_token</con:name><con:value>"aO1lhT5nQnkSmNwGM9+AmcMOY3TnhOs1IFMr5yGiKBSNNsRKkAziqz6MU5C0jjEUeenoBVdPYpmA1CuE/h7fTcVfC5PXrLnBKHjyqJv7jS9SVxOq40W+k3P7IdXOxTwGFRTFEwWSRWlsNx3BrUg0ow=="</con:value></con:property><con:property><con:name>kmauthtoken</con:name><con:value>{"integrationUserToken":"b2tjc19teXNxbDVfNzpNblVkUWZydTJvS1ZzZVM3d3hpUno4WVdzNDZEMkE2Z1JJRHQ1c3pvQnkvUVQwY2YzRWhFcThDbTVnckp3TDJQR0Z4eG9FY3pvWEFuRTVTdm1MUzl0T1dJV0FYL2poTlNpdjhteWF2M1FtanpQRFRtTWdXbWxYaVpZQjQ1T0FCRWQxSkFuMkxFZkZXMythaFM3YnRubkNtTXpOTDB4WVBscWEwR215T1lMTFU9","userToken":"aO1lhT5nQnkSmNwGM9+AmcMOY3TnhOs1IFMr5yGiKBSNNsRKkAziqz6MU5C0jjEUeenoBVdPYpmA1CuE/h7fTcVfC5PXrLnBKHjyqJv7jS9SVxOq40W+k3P7IdXOxTwGFRTFEwWSRWlsNx3BrUg0ow=="}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="integration_data" id="97d79d88-0c76-40f4-9b21-34ada843959b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>apiuser1</con:value></con:property><con:property><con:name>data2</con:name><con:value>okcs1234</con:value></con:property><con:property><con:name>data3</con:name><con:value>okcs_mysql5_7</con:value></con:property><con:property><con:name>data4</con:name><con:value>https://okcs-mysql5-7-irs.dv.lan</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request1</con:value></con:property><con:property><con:name>data5</con:name><con:value>FA1</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="authentication_data" id="60490c1b-4332-4bce-b80a-c04a1e1be228"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>account2</con:value></con:property><con:property><con:name>data2</con:name><con:value>Account1234</con:value></con:property><con:property><con:name>data3</con:name><con:value>okcs_mysql5_7</con:value></con:property><con:property><con:name>data4</con:name><con:value>ACCOUNT</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request2</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="token" id="2b3a5566-85cb-495d-9b58-2808960ea8c7"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/integration/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="token" id="c1c0df32-6615-4bc7-a004-cd7a3dd02874" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="{&amp;quot;siteName&amp;quot;:&amp;quot;${integration_data#data3}&amp;quot;}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>{"login":"${integration_data#data1}","password":"${integration_data#data2}","siteName":"${integration_data#data3}"}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/integration/authorize</con:originalUri><con:assertion type="Simple Contains" id="778a922e-cf5f-49bc-b883-7443c2f26235" name="authenticationToken"><con:configuration><token>authenticationToken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GetToken" id="dec106cc-223a-4b86-a5a2-ad0ec13f4ff8"><con:settings/><con:config><script>
+String int_token
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("token").getPropertyValue("response")
+def result=new XmlSlurper().parseText(responseContent)
+int_token="\"${result}\""
+//log.info (int_token)
+Count_Property.setPropertyValue("integration_token",int_token.toString())
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Authorize" id="9571a0d4-45de-4c4b-89bc-957a082a8ad0"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authorize" id="7350ec9f-d158-4fcd-808e-67e4e0e0b69a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot;${authentication_data#data3}&quot;,&quot;integrationUserToken&quot;:${Count#integration_token}}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>userName=${authentication_data#data1}&amp;password=${authentication_data#data2}&amp;siteName=${authentication_data#data3}&amp;userExternalType=${authentication_data#data4}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/authorize</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a56208a0-0088-4ac6-9ac5-b8bafd83f91c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="00546b38-7e77-4609-afbc-5091608ab8a0" name="recordId"><con:configuration><token>recordId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="uToken" id="14b09598-4599-4aff-a100-de6bce8af575"><con:settings/><con:config><script>import javax.xml.xpath.*
+import javax.xml.parsers.DocumentBuilderFactory
+
+String user_token,int_token;
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("Authorize").getPropertyValue("response")
+def AuthInfo=new XmlSlurper().parseText(responseContent)
+String sFull_auth=AuthInfo.authenticationToken[0].toString()
+String[] sa_Full_auth=sFull_auth.split(",")
+for(int i=0;i&lt;=sa_Full_auth.length-1;i++){			
+	if(sa_Full_auth[i].contains("userToken")){
+		//log.info(s2[i])
+		sValid_token1=sa_Full_auth[i]
+		break
+	}
+}
+
+String[] sValid_token_final=sValid_token1.split(":")
+user_token=sValid_token_final[1]
+int_token=Count_Property.getPropertyValue("integration_token")
+
+Count_Property.setPropertyValue("authentication_token",user_token.toString())
+Count_Property.setPropertyValue("kmauthtoken","{\"integrationUserToken\":"+int_token+",\"userToken\":"+user_token+"}")
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Get_content_ALL" id="32171bd2-e99e-42af-9d16-9e17dc815491"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_content_ALL" id="82107b8f-a9f9-440e-b927-ce4020099a5a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="kmauthtoken" value="${Count#kmauthtoken}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>http://day106-161100-sql-197h-irs.dv.lan/km/api/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ac7f315f-e79a-4875-8964-637f2c13c17c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="mode" value="FULL" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>mode</con:entry><con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="q Query" id="3f4f0b5c-46ef-4704-b413-4d00d46779a5"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="q Query" id="82107b8f-a9f9-440e-b927-ce4020099a5a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>http://day106-161100-sql-197h-irs.dv.lan/km/api/latest/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="c0703754-fb80-4642-89b3-f417a844b3b0" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="mode" value="FULL"/>
+  <con:entry key="q" value="documentId eq 'F51_48'"/>
+</con:parameters><con:parameterOrder><con:entry>mode</con:entry><con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get 1 Content" id="db6cf868-57ee-428f-a207-b1f2773d4085" disabled="true"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content/docId/${integration_data#data5}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get 1 Content" id="2df2bc46-0dc5-4ab6-8e3b-f3a0e3303797" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_date#data4}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>mode</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Add Content" id="d5613a88-00be-4dea-8684-efdf164fbff3" disabled="true"><con:settings/><con:config service="" resourcePath="/km/api/latest/content?publish=TRUE" methodName="$integration_data#data4" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Add Content" id="f2b06a84-20d9-4f87-99ca-a49c27e95702" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request><![CDATA[
+<Content>
+    <locale>
+        <recordId>en_US</recordId>
+    </locale>
+		
+   <contentType>
+         <recordId>04007203d961fad015a7f23da09007e63</recordId>
+         <referenceKey>FAQ</referenceKey>
+         <name>FAQ</name>
+        <description>Token test from API</description>
+    </contentType>
+	
+
+
+    <priority>PRIORITY_0</priority>
+    <displayStartDate>2016-08-11T07:17:00-0600</displayStartDate>
+	<displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+    <published>false</published>
+    <pending>false</pending>
+    <checkedOut>false</checkedOut>
+    <displayPosition>HISTORICAL_USEFULNESS</displayPosition>
+	
+      <xml><FAQ><IPHONE_NOT_REBOOTING>Hold Power Button for 5 secs ... Testing again FAQ10</IPHONE_NOT_REBOOTING></FAQ></xml>
+	  
+	
+	  
+    <isForEdit>true</isForEdit>
+    <categories/>
+    <userGroups/>
+	
+	
+      <views>
+         <ViewKey>
+            <recordId>04007203d961fad015a7f23da09007e8d</recordId>
+            <referenceKey>TEST_VIEW</referenceKey>
+            <name>test_view</name>
+        </ViewKey>
+    </views>
+	
+	
+	
+</Content>
+]]></con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="19122cd2-ec78-4716-b3dc-4b271b8e21e5" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="publish" value="TRUE" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>publish</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="categories" id="02f96651-d202-43ee-a12f-8c2493ceafdc"><con:settings/><con:config service="https://day246-16801-sql-254h-irs.dv.lan" resourcePath="/km/api/latest/categories" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="categories" id="4008b4de-8bbb-4053-88c5-899f562ad5bb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="kmauthtoken" value="${Count#kmauthtoken}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>https://day246-16801-sql-254h-irs.dv.lan/km/api/latest/categories</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f9aff9fd-560b-40e0-9322-d1458bc4d4cf" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="contenttypes" id="0accff1b-95aa-4423-a428-5ab64bc90f25"><con:settings/><con:config service="https://day246-16801-sql-254h-irs.dv.lan" resourcePath="/km/api/latest/contentTypes" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="contenttypes" id="41387455-6169-45b9-804b-4865d826d4ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="kmauthtoken" value="${Count#kmauthtoken}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>https://day566-16501-sql-254h-irs.dv.lan/km/api/latest/contentTypes</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="1eb32a6b-30e2-4b61-9e5e-637647fd2c2b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="loop_back" id="a7969e82-0f77-4950-98d3-826876992a78"><con:settings/><con:config><script>
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=context.kmauthtoken_list
+kmauthtoken_list.add(Count_Property.getPropertyValue("kmauthtoken"))
+	
+int iCurrent_count=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+int iTotal_count=Count_Property.getPropertyValue("iTotal_count").toInteger()
+
+if(iCurrent_count!=iTotal_count){
+	Count_Property.setPropertyValue("iCurrent_count",(iCurrent_count+1).toString())
+	testRunner.gotoStepByName("Start_here") //setStartStep
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="exit" id="64ee616a-9771-4120-9014-0c7bf9555195"><con:settings/><con:config><script>def excel_operation=context.excel
+def kmauthtoken_list=context.kmauthtoken_list
+
+Count_Property=testRunner.testCase.getTestStepByName("Count")
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+if(kmauthtoken_list.size()!=0)
+	excel_operation.write_column_data(excel_integration,kmauthtoken_list)
+	
+excel_operation.close_excel();
+log.info ("EXIT")</script></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>"ZGF5MTE2XzE2ODAxX3NxbF8yNTRoOkFYdHBFS1NEeDBlU3ZWSUtuTllpbnFZbTUvd3BaRThkdWxSRy9HOTFnblM0cGNVMXFGalRPcmd4NDJXa1B2TGNMNWRGQmxzNFJneGpLRnZpeHVSVVhhMEFHTEhwaVM1WlVFU0ZhU0NKK094dTBkM25xWnRpWWd3b3NUOE9yOElyTWhDQ24yakpsQW5JcmhTRllBSmRGSzYvVE5zb3pjb0Q3amYza08wUWxxbUJ2dWxZdVE1a3JKYk5NT1RJY29weA=="</con:value></con:property><con:property><con:name>uToken</con:name><con:value>"N5zjKIW7MXZ+Kvx/bl2JTDXXNsra9ttW6y5E351Ln9NLMXCT+kBqFn5kALc6HUJaAQwVl1yk8KfrqwfDWXfW74k4hi8NHefmkxpHRAjmpbNsPsZwDhhT7iGKiFzNShvQrKAKdECCS9EWQq+9ukrEeA=="</con:value></con:property><con:property><con:name>iTotal_count</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:testCase id="a165cdca-9421-42b0-8e24-c63c1d47fbe1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Add Content Test Case" searchProperties="true"><con:settings/><con:testStep type="groovy" name="initialization" id="77773df9-7d1d-459d-978f-92cb8547e446"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=new ArrayList&lt;String>();
+context.setProperty( "kmauthtoken_list", kmauthtoken_list)
+
+Count_Property.setPropertyValue("iCurrent_count","1")
+Count_Property.setPropertyValue("excel_path","D:\\Work_related\\sanitytest_charith\\Add_Content.xls")  // Excel File path in Computer
+//D:\\Work_related\\161207-000264\\framework.xls
+Count_Property.setPropertyValue("iTotal_count","")
+
+Count_Property.setPropertyValue("excel_integration_sheet","integration")  		// Sheet in Excel holding Integration Data
+Count_Property.setPropertyValue("excel_authentication_sheet","authentication")	// Sheet in Excel holding Auth Data
+Count_Property.setPropertyValue("integration_PropertyFile","integration_data")	// Property file name in SoapUI holding integration data
+Count_Property.setPropertyValue("authentication_PropertyFile","authentication_data")	// Property file name in SoapUI holding Auth data
+Count_Property.setPropertyValue("Result_Excel","D:\\GetContent_Result.xls")	
+testRunner.testCase.testSuite.setPropertyValue( "Testname",context.testCase.getLabel()) // Store Testname under @ testsuite level to use by other test cases in our case Library 
+log.info(testRunner.testCase.testSuite.getPropertyValue("Testname"))
+//Count_Property.setPropertyValue("Testname",context.testCase.getLabel())
+//com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "Testname", context.testCase.getLabel() )
+//log.info context.testCase.getTestStepAt(context.getCurrentStepIndex()).getLabel()   //get Current test case name
+//
+//def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+//library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel 
+//library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property 
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Start_here" id="cf59ee7b-9c8d-419a-9bc5-581cb557aec6"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+//----------------------------------------------------------
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+String excel_auth=Count_Property.getPropertyValue("excel_authentication_sheet")		
+String integration_PropertyFile=Count_Property.getPropertyValue("integration_PropertyFile")//Count holde integration_data
+String auth_PropertyFile=Count_Property.getPropertyValue("authentication_PropertyFile")//Count holds authentication_data
+ArrayList&lt;String> lData;
+int row=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+
+def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel and store in  context
+library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property and stora in context
+
+def excel_operation=context.excel		//excel= Excel object instance stored in context  (ref Excel file in library for more info)
+def Property_operation=context.Property  //Property= Property_lib object instance stored in context (ref Property_lib file for more info)
+
+//----------------------------------------------------------Read 1 row at a time 
+
+Property_operation.Total_Count("iTotal_count",excel_operation.total_rows(excel_integration)) // Count no of rows in -excel_integration_sheet sheet and save in var
+lData=excel_operation.read_row(excel_integration,row)
+Property_operation.set_data(lData,integration_PropertyFile)  //Copys excel row from an array to "integration_data" property file
+lData=excel_operation.read_row(excel_auth,row)
+Property_operation.set_data(lData,auth_PropertyFile)
+</script></con:config></con:testStep><con:testStep type="properties" name="Count" id="4bb14239-7083-482e-be71-4f20354fdccf"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>excel_authentication_sheet</con:name><con:value>authentication</con:value></con:property><con:property><con:name>authentication_PropertyFile</con:name><con:value>authentication_data</con:value></con:property><con:property><con:name>iCurrent_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_path</con:name><con:value>D:\Work_related\sanitytest_charith\Add_Content.xls</con:value></con:property><con:property><con:name>iTotal_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_integration_sheet</con:name><con:value>integration</con:value></con:property><con:property><con:name>integration_PropertyFile</con:name><con:value>integration_data</con:value></con:property><con:property><con:name>data0</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data1</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data2</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data3</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data4</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>Result_Excel</con:name><con:value>D:\GetContent_Result.xls</con:value></con:property><con:property><con:name>integration_token</con:name><con:value>"b2tjc19teXNxbDVfNzp6NlZSS2N1dklTNUdremFoK1lFbnBuSFZQQzJiV3o3OU54cEFFWThnYkZnT29Xd2toVExGWVo1KzZNTFJrVDhNRzk0S1RaN01PWFAyd0picWRLTmdaZHBGTjdIQmVCbVI1ckJHOXRBelNLakNYNUxsemdzcldwOTdwZ0ZsSTFYY0IvMHJ1RmtWbGJEZjVKMEJKMWM3ZTQyQi9HSEsyYi9NRzNwSmtwV1o1dlE9"</con:value></con:property><con:property><con:name>authentication_token</con:name><con:value>"CeAcM7WnFPliN0WcuAi1wW86DGwCHVkP1S4Hg2KMoAHOYpLCzkWN01AyzwvpJGjSt0d1TQGHx3Bj6cp5NQovm2UujbW+vFvXwWGlCFjlVWIVqwcXw1rcenP4ieqalsgb1WDkvTkTQYsaZVzuMLWTMw=="</con:value></con:property><con:property><con:name>kmauthtoken</con:name><con:value>{"integrationUserToken":"b2tjc19teXNxbDVfNzp6NlZSS2N1dklTNUdremFoK1lFbnBuSFZQQzJiV3o3OU54cEFFWThnYkZnT29Xd2toVExGWVo1KzZNTFJrVDhNRzk0S1RaN01PWFAyd0picWRLTmdaZHBGTjdIQmVCbVI1ckJHOXRBelNLakNYNUxsemdzcldwOTdwZ0ZsSTFYY0IvMHJ1RmtWbGJEZjVKMEJKMWM3ZTQyQi9HSEsyYi9NRzNwSmtwV1o1dlE9","userToken":"CeAcM7WnFPliN0WcuAi1wW86DGwCHVkP1S4Hg2KMoAHOYpLCzkWN01AyzwvpJGjSt0d1TQGHx3Bj6cp5NQovm2UujbW+vFvXwWGlCFjlVWIVqwcXw1rcenP4ieqalsgb1WDkvTkTQYsaZVzuMLWTMw=="}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="integration_data" id="277935c4-b702-4230-96b9-d28b8826e635"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>apiuser1</con:value></con:property><con:property><con:name>data2</con:name><con:value>okcs1234</con:value></con:property><con:property><con:name>data3</con:name><con:value>okcs_mysql5_7</con:value></con:property><con:property><con:name>data4</con:name><con:value>https://okcs-mysql5-7-irs.dv.lan</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request1</con:value></con:property><con:property><con:name>data5</con:name><con:value>CU1</con:value></con:property><con:property><con:name>content_full</con:name><con:value><![CDATA[<Content>
+<locale>
+ <recordId>en_US</recordId>
+</locale>
+<contentType>
+<recordId>01209405500c50c015aad35d2e4007ecd</recordId>
+<referenceKey>CUSTOM_TYPE</referenceKey>
+<name>CUSTOM_TYPE</name>
+<description>null</description>
+</contentType>
+
+<priority>PRIORITY_0</priority>
+<displayStartDate>2017-03-10T00:07:00-0700</displayStartDate>
+<displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+<published>false</published> 
+<pending>false</pending>
+<checkedOut>false</checkedOut>
+<displayPosition>HISTORICAL_USEFULNESS</displayPosition>
+<xml><CUSTOM_TYPE><TITLE>REST-2017-03-10T12:49:29 216</TITLE><DESCRIPTION>2017-03-10T12:49:29 217</DESCRIPTION></CUSTOM_TYPE></xml>
+<isForEdit>true</isForEdit>
+<categories>null</categories>
+<userGroups>null</userGroups>
+<views>
+<ViewKey>
+<recordId>0120961ab5c3c7015aad35d88b007f17</recordId> 
+<referenceKey>VIEW_EN_US</referenceKey>
+<name>View_en_US</name> 
+</ViewKey>
+</views></Content>]]></con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="authentication_data" id="f90f0499-c92d-4970-b413-b6ae83a1b5d2"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>account2</con:value></con:property><con:property><con:name>data2</con:name><con:value>Account1234</con:value></con:property><con:property><con:name>data3</con:name><con:value>okcs_mysql5_7</con:value></con:property><con:property><con:name>data4</con:name><con:value>ACCOUNT</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request2</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="token" id="522a6c82-99f0-43fe-850a-84059e890f11"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/integration/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="token" id="c1c0df32-6615-4bc7-a004-cd7a3dd02874" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="{&amp;quot;siteName&amp;quot;:&amp;quot;${integration_data#data3}&amp;quot;}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>{"login":"${integration_data#data1}","password":"${integration_data#data2}","siteName":"${integration_data#data3}"}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/integration/authorize</con:originalUri><con:assertion type="Simple Contains" id="778a922e-cf5f-49bc-b883-7443c2f26235" name="authenticationToken"><con:configuration><token>authenticationToken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GetToken" id="7726b5e0-17fd-4472-afa6-8536de1b3089"><con:settings/><con:config><script>
+String int_token
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("token").getPropertyValue("response")
+def result=new XmlSlurper().parseText(responseContent)
+int_token="\"${result}\""
+//log.info (int_token)
+Count_Property.setPropertyValue("integration_token",int_token.toString())
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Authorize" id="3b685b0c-4ca5-41fd-a5da-3321c59005ff"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authorize" id="7350ec9f-d158-4fcd-808e-67e4e0e0b69a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot;${authentication_data#data3}&quot;,&quot;integrationUserToken&quot;:${Count#integration_token}}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>userName=${authentication_data#data1}&amp;password=${authentication_data#data2}&amp;siteName=${authentication_data#data3}&amp;userExternalType=${authentication_data#data4}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/authorize</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a56208a0-0088-4ac6-9ac5-b8bafd83f91c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="00546b38-7e77-4609-afbc-5091608ab8a0" name="recordId"><con:configuration><token>recordId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="uToken" id="afdb488b-7361-471d-a9db-ea79fa34f291"><con:settings/><con:config><script>import javax.xml.xpath.*
+import javax.xml.parsers.DocumentBuilderFactory
+
+String user_token,int_token;
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("Authorize").getPropertyValue("response")
+def AuthInfo=new XmlSlurper().parseText(responseContent)
+String sFull_auth=AuthInfo.authenticationToken[0].toString()
+String[] sa_Full_auth=sFull_auth.split(",")
+for(int i=0;i&lt;=sa_Full_auth.length-1;i++){			
+	if(sa_Full_auth[i].contains("userToken")){
+		//log.info(s2[i])
+		sValid_token1=sa_Full_auth[i]
+		break
+	}
+}
+
+String[] sValid_token_final=sValid_token1.split(":")
+user_token=sValid_token_final[1]
+int_token=Count_Property.getPropertyValue("integration_token")
+
+Count_Property.setPropertyValue("authentication_token",user_token.toString())
+Count_Property.setPropertyValue("kmauthtoken","{\"integrationUserToken\":"+int_token+",\"userToken\":"+user_token+"}")
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Get 1 Content_Doc ID" id="7270bf3e-6985-4f6e-8674-3dcef7495508"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content/docId/${integration_data#data5}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get 1 Content_Doc ID" id="2df2bc46-0dc5-4ab6-8e3b-f3a0e3303797" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content/docId/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>mode</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="New Content Creator Script" id="59cd5666-39e0-4c5c-aa03-4520e135c759"><con:settings/><con:config><script><![CDATA[//http://www.robert-nemet.com/2011/11/groovy-xml-parsing-in-soapui.html
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+responseContent = testRunner.testCase.getTestStepByName("Get 1 Content_Doc ID").getPropertyValue("response")
+def holder = groovyUtils.getXmlHolder(responseContent)
+//log.info holder.getNodeValue("//locale/recordId")
+//log.info holder['//recordId']
+
+String locale_recordID=holder.getNodeValue("//locale/recordId")
+
+String contentType_recordid=holder.getNodeValue("//contentType/recordId")
+String contentType_refkey=holder.getNodeValue("//contentType/referenceKey")
+String contentType_name=holder.getNodeValue("//contentType/name").toUpperCase()
+//log.info contentType_name.toUpperCase()
+String contentType_desc=holder.getNodeValue("//contentType/DESCRIPTION")
+
+String priority=holder.getNodeValue("//priority")
+String StartDate=holder.getNodeValue("//displayStartDate")
+String EndDate=holder.getNodeValue("//displayEndDate")
+String published=holder.getNodeValue("//published")
+String pending=holder.getNodeValue("//pending")
+String checkedOut=holder.getNodeValue("//checkedOut")
+String displayPosition=holder.getNodeValue("//displayPosition")
+//String xml_test=holder.getNodeValue("//xml/")
+String xml_title=holder.getNodeValue("//xml/"+contentType_name+"/TITLE")
+//String xml_description=holder.getNodeValue("//xml/"+contentType_name+"/DESCRIPTION")
+
+//String isForEdit="true"
+
+String categories=holder.getNodeValue("//categories")
+String userGroups=holder.getNodeValue("//userGroups")
+
+String views_recordid=holder.getNodeValue("//views/ViewKey/recordId")
+String views_refkey=holder.getNodeValue("//views/ViewKey/referenceKey")
+String views_name=holder.getNodeValue("//views/ViewKey/name")
+
+//-----------------------------------------------------------------------------------
+String locale="\n<locale>\n <recordId>"+locale_recordID+"</recordId>\n</locale>"	
+String contentType="\n<contentType>\n<recordId>"+contentType_recordid+"</recordId>\n<referenceKey>"+contentType_refkey+"</referenceKey>\n<name>"+contentType_name+"</name>\n<description>"+contentType_desc+"</description>\n</contentType>\n"
+String priority_full="\n<priority>"+priority+"</priority>"
+String startdate_full="\n<displayStartDate>"+StartDate+"</displayStartDate>"
+String enddate_full="\n<displayEndDate>"+EndDate+"</displayEndDate>"
+String published_full="\n<published>false</published>"
+String pending_full=" \n<pending>"+pending+"</pending>"
+String checkedout_full="\n<checkedOut>"+false+"</checkedOut>"
+String displayposition_full="\n<displayPosition>"+displayPosition+"</displayPosition>"
+String xml_title_full="<"+contentType_name+"><TITLE>REST-"+new Date().format("yyyy-MM-dd'T'HH:mm:ss SSS")+"</TITLE>" //+"</"+contentType_name+">"
+String xml_desc_full= "<DESCRIPTION>"+new Date().format("yyyy-MM-dd'T'HH:mm:ss SSS")+"</DESCRIPTION></"+contentType_name+">"
+
+  
+String xml_full="\n<xml>"+xml_title_full+xml_desc_full+"</xml>"
+String isForEdit_full="\n<isForEdit>true</isForEdit>"
+String  categories_full="\n<categories>"+categories+"</categories>"
+String  userGroups_full="\n<userGroups>"+userGroups+"</userGroups>"
+
+String views_full="\n<views>\n<ViewKey>\n<recordId>"+views_recordid+"</recordId> \n<referenceKey>"+views_refkey+"</referenceKey>\n<name>"+views_name+"</name> \n</ViewKey>\n</views>"	
+
+String content_part1="<Content>"+locale+contentType+priority_full+startdate_full+enddate_full+published_full
+String content_part2=pending_full+checkedout_full+displayposition_full+xml_full+isForEdit_full+categories_full+userGroups_full+views_full+"</Content>"
+
+String content_full=content_part1+content_part2
+
+log.info (content_full)
+
+testRunner.testCase.getTestStepByName("integration_data").setPropertyValue( "content_full",content_full)
+
+]]></script></con:config></con:testStep><con:testStep type="restrequest" name="AddContent" id="241d9741-9415-4b55-bee4-50c9101284b7"><con:settings/><con:config service="" resourcePath="/km/api/latest/content?publish=TRUE" methodName="$integration_data#data4" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddContent" id="f2b06a84-20d9-4f87-99ca-a49c27e95702" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>${integration_data#content_full}</con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ec2ded5c-f257-4eec-b659-7ef2880ce7af" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="publish" value="TRUE" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>publish</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="loop_back" id="0f0a017b-3865-4b9e-9a5b-b5190f383236"><con:settings/><con:config><script>
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=context.kmauthtoken_list
+kmauthtoken_list.add(Count_Property.getPropertyValue("kmauthtoken"))
+	
+int iCurrent_count=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+int iTotal_count=Count_Property.getPropertyValue("iTotal_count").toInteger()
+
+if(iCurrent_count!=iTotal_count){
+	Count_Property.setPropertyValue("iCurrent_count",(iCurrent_count+1).toString())
+	testRunner.gotoStepByName("Start_here") //setStartStep
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="exit" id="3ec38dcf-f8c7-4ded-9e8a-7aec94116206"><con:settings/><con:config><script>def excel_operation=context.excel
+def kmauthtoken_list=context.kmauthtoken_list
+
+Count_Property=testRunner.testCase.getTestStepByName("Count")
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+if(kmauthtoken_list.size()!=0)
+	excel_operation.write_column_data(excel_integration,kmauthtoken_list)
+	
+excel_operation.close_excel();
+log.info ("EXIT")</script></con:config></con:testStep><con:loadTest id="5836f239-e314-4ded-a22f-48cb661489bb" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:testCase id="4580a8f9-0f21-47ce-ba4f-45ecae9d8b83" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Edit Content Test Case" searchProperties="true"><con:settings/><con:testStep type="groovy" name="initialization" id="3246d37d-1046-4da1-ad1b-8716ba9f2b56"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+def kmauthtoken_list=new ArrayList&lt;String>();
+context.setProperty( "kmauthtoken_list", kmauthtoken_list)
+
+Count_Property.setPropertyValue("iCurrent_count","1")
+Count_Property.setPropertyValue("excel_path","D:\\Work_related\\soapUI\\Framework\\OKCS Framework\\framework_v8\\Edit_Content.xls")  // Excel File path in Computer
+//D:\\Work_related\\161207-000264\\framework.xls
+Count_Property.setPropertyValue("iTotal_count","")
+
+Count_Property.setPropertyValue("excel_integration_sheet","integration")  		// Sheet in Excel holding Integration Data
+Count_Property.setPropertyValue("excel_authentication_sheet","authentication")	// Sheet in Excel holding Auth Data
+Count_Property.setPropertyValue("integration_PropertyFile","integration_data")	// Property file name in SoapUI holding integration data
+Count_Property.setPropertyValue("authentication_PropertyFile","authentication_data")	// Property file name in SoapUI holding Auth data
+Count_Property.setPropertyValue("Result_Excel","D:\\GetContent_Result.xls")	
+testRunner.testCase.testSuite.setPropertyValue( "Testname",context.testCase.getLabel()) // Store Testname under @ testsuite level to use by other test cases in our case Library 
+log.info(testRunner.testCase.testSuite.getPropertyValue("Testname"))
+//Count_Property.setPropertyValue("Testname",context.testCase.getLabel())
+//com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "Testname", context.testCase.getLabel() )
+//log.info context.testCase.getTestStepAt(context.getCurrentStepIndex()).getLabel()   //get Current test case name
+//
+//def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+//library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel 
+//library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property 
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Start_here" id="8f660c42-cc34-4152-a131-dd2617d733eb"><con:settings/><con:config><script>import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+//----------------------------------------------------------
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+
+String excel_integration=Count_Property.getPropertyValue("excel_integration_sheet")	
+String excel_auth=Count_Property.getPropertyValue("excel_authentication_sheet")		
+String integration_PropertyFile=Count_Property.getPropertyValue("integration_PropertyFile")//Count holde integration_data
+String auth_PropertyFile=Count_Property.getPropertyValue("authentication_PropertyFile")//Count holds authentication_data
+ArrayList&lt;String> lData;
+int row=Count_Property.getPropertyValue("iCurrent_count").toInteger()
+
+def library = testRunner.testCase.testSuite.project.testSuites["Library"]
+library.testCases["folder"].testSteps["Excel"].run(testRunner, context) // Initialises excel and store in  context
+library.testCases["folder"].testSteps["Property_lib"].run(testRunner, context)//// Initialises property and stora in context
+
+def excel_operation=context.excel		//excel= Excel object instance stored in context  (ref Excel file in library for more info)
+def Property_operation=context.Property  //Property= Property_lib object instance stored in context (ref Property_lib file for more info)
+
+//----------------------------------------------------------Read 1 row at a time 
+
+Property_operation.Total_Count("iTotal_count",excel_operation.total_rows(excel_integration)) // Count no of rows in -excel_integration_sheet sheet and save in var
+lData=excel_operation.read_row(excel_integration,row)
+Property_operation.set_data(lData,integration_PropertyFile)  //Copys excel row from an array to "integration_data" property file
+lData=excel_operation.read_row(excel_auth,row)
+Property_operation.set_data(lData,auth_PropertyFile)
+</script></con:config></con:testStep><con:testStep type="properties" name="Count" id="25882044-213c-40c9-a833-1c2c6e4f241d"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>excel_authentication_sheet</con:name><con:value>authentication</con:value></con:property><con:property><con:name>authentication_PropertyFile</con:name><con:value>authentication_data</con:value></con:property><con:property><con:name>iCurrent_count</con:name><con:value>1</con:value></con:property><con:property><con:name>excel_path</con:name><con:value>D:\Work_related\soapUI\Framework\OKCS Framework\framework_v6\Add_Content.xls</con:value></con:property><con:property><con:name>iTotal_count</con:name><con:value>10</con:value></con:property><con:property><con:name>excel_integration_sheet</con:name><con:value>integration</con:value></con:property><con:property><con:name>integration_PropertyFile</con:name><con:value>integration_data</con:value></con:property><con:property><con:name>data0</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data1</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data2</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data3</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>data4</con:name><con:value xsi:nil="true"/></con:property><con:property><con:name>Result_Excel</con:name><con:value>D:\GetContent_Result.xls</con:value></con:property><con:property><con:name>integration_token</con:name><con:value>"YXBpdG9rZW46WjcvSTdBOVhlQnlnMThMUEhRMjM5SmFaVlIwOURhOXdxSE5hTmI5SWpjSnRJcXBsNUNaZEMrRXF4dDlUMEx4bUZFRGRCcDRDWEM3dFRSNTFTQThnM3J0ZUdvc2NadnJYcm9rYW5RR0EwVWsvaldxZ3ZjRkh1RCtMNEN1WklBeFVRYUtZUHdqSXoxRnVkMnpMV0IxdWxnPT0="</con:value></con:property><con:property><con:name>authentication_token</con:name><con:value>"UQgrme2Yafx/I3bIImy2O4i67rQfH0iCZT8b6/CMzmj6q22CFeYCUb7GIBXoE26Nd10E0URYy3/HGi04d/JJq9PdUVZCew/diwMDcF2o3aDu9IKag1bBF8xqSP0njJAmWMBbIdVRT1LBtdEX/6nIwA=="</con:value></con:property><con:property><con:name>kmauthtoken</con:name><con:value>{"integrationUserToken":"YXBpdG9rZW46WjcvSTdBOVhlQnlnMThMUEhRMjM5SmFaVlIwOURhOXdxSE5hTmI5SWpjSnRJcXBsNUNaZEMrRXF4dDlUMEx4bUZFRGRCcDRDWEM3dFRSNTFTQThnM3J0ZUdvc2NadnJYcm9rYW5RR0EwVWsvaldxZ3ZjRkh1RCtMNEN1WklBeFVRYUtZUHdqSXoxRnVkMnpMV0IxdWxnPT0=","userToken":"UQgrme2Yafx/I3bIImy2O4i67rQfH0iCZT8b6/CMzmj6q22CFeYCUb7GIBXoE26Nd10E0URYy3/HGi04d/JJq9PdUVZCew/diwMDcF2o3aDu9IKag1bBF8xqSP0njJAmWMBbIdVRT1LBtdEX/6nIwA=="}</con:value></con:property><con:property><con:name>ContentID</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="integration_data" id="d3d6521f-2fef-46d9-8e2b-c8e23b3c04ca"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>apiuser</con:value></con:property><con:property><con:name>data2</con:name><con:value>password</con:value></con:property><con:property><con:name>data3</con:name><con:value>apitoken</con:value></con:property><con:property><con:name>data4</con:name><con:value>https://apitoken-irs.qb.lan</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request1</con:value></con:property><con:property><con:name>data5</con:name><con:value>AP9</con:value></con:property><con:property><con:name>content_edit</con:name><con:value><![CDATA[<Content>
+<recordId>283E575DE3BF41B3A56A32546116EF34</recordId>
+<versionId>26C7E30C2A9A4584BF35CC888B2EFD0E</versionId>
+<documentId>AP9</documentId>
+ <version>1.0</version>
+<answerId>1000023</answerId>
+
+<locale>
+ <recordId>en_US</recordId>
+</locale>
+<contentType>
+<recordId>04003723684ad7015a89da9f18007fe9</recordId>
+<referenceKey>APPLE</referenceKey>
+<name>APPLE</name>
+</contentType>
+
+<priority>PRIORITY_0</priority>
+<dateModified>2017-03-04T21:12:05-0700</dateModified>
+<createDate>2017-03-04T21:12:05-0700</createDate>
+<lastModifiedDate>2017-03-04T21:12:05-0700</lastModifiedDate>
+<dateAdded>2017-03-04T21:12:05-0700</dateAdded>
+<displayStartDate>1900-01-01T00:00:00-0700</displayStartDate>
+<displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+<published>false</published>
+<checkedOut>false</checkedOut>
+<xml><APPLE><TITLE>2017-03-07T16:19:27 014</TITLE><DESCRIPTION>2017-03-07T16:19:27 015</DESCRIPTION></APPLE></xml>
+<isForEdit>true</isForEdit>
+<categories>null</categories>
+<userGroups>null</userGroups>
+<views>
+<ViewKey>
+<recordId>04007203d961fad015a7f23da09007e8d</recordId> 
+<referenceKey>TEST_VIEW</referenceKey>
+<name>test_view</name> 
+</ViewKey>
+</views></Content>]]></con:value></con:property><con:property><con:name>recordid</con:name><con:value>283E575DE3BF41B3A56A32546116EF34</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="properties" name="authentication_data" id="29c9e530-7f9c-4689-bd31-dc2e67201966"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>data1</con:name><con:value>Admin</con:value></con:property><con:property><con:name>data2</con:name><con:value>Welcome1</con:value></con:property><con:property><con:name>data3</con:name><con:value>apitoken</con:value></con:property><con:property><con:name>data4</con:name><con:value>ACCOUNT</con:value></con:property><con:property><con:name>data0</con:name><con:value>Request2</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="token" id="eea6f569-22df-4931-b63c-1c74483e1587"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/integration/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="token" id="c1c0df32-6615-4bc7-a004-cd7a3dd02874" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="{&amp;quot;siteName&amp;quot;:&amp;quot;${integration_data#data3}&amp;quot;}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>{"login":"${integration_data#data1}","password":"${integration_data#data2}","siteName":"${integration_data#data3}"}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/integration/authorize</con:originalUri><con:assertion type="Simple Contains" id="778a922e-cf5f-49bc-b883-7443c2f26235" name="authenticationToken"><con:configuration><token>authenticationToken</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GetToken" id="ef72293d-6866-490a-a52e-4dc506f7e4bb"><con:settings/><con:config><script>
+String int_token
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("token").getPropertyValue("response")
+def result=new XmlSlurper().parseText(responseContent)
+int_token="\"${result}\""
+//log.info (int_token)
+Count_Property.setPropertyValue("integration_token",int_token.toString())
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Authorize" id="d2f13cc5-f0d0-4305-83ef-b9c6cbc10f27"><con:settings/><con:config service="http://slc05kvr.us.oracle.com:7202" resourcePath="/km/api/latest/auth/authorize" methodName="Authorize" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authorize" id="7350ec9f-d158-4fcd-808e-67e4e0e0b69a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<entry key="kmauthtoken" value="{&quot;siteName&quot;:&quot;${authentication_data#data3}&quot;,&quot;integrationUserToken&quot;:${Count#integration_token}}" xmlns="http://eviware.com/soapui/config"/>]]></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>userName=${authentication_data#data1}&amp;password=${authentication_data#data2}&amp;siteName=${authentication_data#data3}&amp;userExternalType=${authentication_data#data4}</con:request><con:originalUri>http://slc05kvr.us.oracle.com/km/api/latest/auth/authorize</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a56208a0-0088-4ac6-9ac5-b8bafd83f91c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="00546b38-7e77-4609-afbc-5091608ab8a0" name="recordId"><con:configuration><token>recordId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="uToken" id="ee5db4a1-b0cb-4327-948d-aa2faf70cc1e"><con:settings/><con:config><script>import javax.xml.xpath.*
+import javax.xml.parsers.DocumentBuilderFactory
+
+String user_token,int_token;
+def Count_Property=testRunner.testCase.getTestStepByName("Count")
+responseContent = testRunner.testCase.getTestStepByName("Authorize").getPropertyValue("response")
+def AuthInfo=new XmlSlurper().parseText(responseContent)
+String sFull_auth=AuthInfo.authenticationToken[0].toString()
+String[] sa_Full_auth=sFull_auth.split(",")
+for(int i=0;i&lt;=sa_Full_auth.length-1;i++){			
+	if(sa_Full_auth[i].contains("userToken")){
+		//log.info(s2[i])
+		sValid_token1=sa_Full_auth[i]
+		break
+	}
+}
+
+String[] sValid_token_final=sValid_token1.split(":")
+user_token=sValid_token_final[1]
+int_token=Count_Property.getPropertyValue("integration_token")
+
+Count_Property.setPropertyValue("authentication_token",user_token.toString())
+Count_Property.setPropertyValue("kmauthtoken","{\"integrationUserToken\":"+int_token+",\"userToken\":"+user_token+"}")
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Get 1 Content_Doc ID" id="e4248955-bc96-45c6-b38d-9ac04805184d"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content/docId/${integration_data#data5}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get 1 Content_Doc ID" id="2df2bc46-0dc5-4ab6-8e3b-f3a0e3303797" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request/><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content/docId/AP4</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="442e372e-d6d0-4b5c-8efb-17e83506fd11" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="mode" value="FULL" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>mode</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Edit Content Creator Script" id="0790574e-b527-4aec-85ff-01246b8ba5e0"><con:settings/><con:config><script><![CDATA[//http://www.robert-nemet.com/2011/11/groovy-xml-parsing-in-soapui.html
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+responseContent = testRunner.testCase.getTestStepByName("Get 1 Content_Doc ID").getPropertyValue("response")
+def holder = groovyUtils.getXmlHolder(responseContent)
+
+String locale_recordID=holder.getNodeValue("//locale/recordId")
+
+String contentType_recordid=holder.getNodeValue("//contentType/recordId")
+String contentType_refkey=holder.getNodeValue("//contentType/referenceKey")
+String contentType_name=holder.getNodeValue("//contentType/name").toUpperCase()
+String contentType_desc=holder.getNodeValue("//contentType/DESCRIPTION")
+
+String dateModified=holder.getNodeValue("//dateModified")//>2017-03-02T04:25:52-0700</dateModified>
+//String priority=holder.getNodeValue("//priority")//>PRIORITY_0</priority>
+String createDate=holder.getNodeValue("//createDate")//>2017-03-03T04:10:33-0700</createDate>
+String lastModifiedDate=holder.getNodeValue("//lastModifiedDate")//>2017-03-03T04:10:33-0700</lastModifiedDate>
+String dateAdded=holder.getNodeValue("//dateAdded")//>2017-03-03T04:10:33-0700</dateAdded>
+
+
+String priority=holder.getNodeValue("//priority")
+String StartDate=holder.getNodeValue("//displayStartDate")
+String EndDate=holder.getNodeValue("//displayEndDate")
+String published=holder.getNodeValue("//published")
+String pending=holder.getNodeValue("//pending")
+String checkedOut=holder.getNodeValue("//checkedOut")
+String displayPosition=holder.getNodeValue("//displayPosition")
+//String xml_test=holder.getNodeValue("//xml/")
+String xml_title=holder.getNodeValue("//xml/"+contentType_name+"/TITLE")
+//String xml_description=holder.getNodeValue("//xml/"+contentType_name+"/DESCRIPTION")
+
+//String isForEdit="true"
+
+String categories=holder.getNodeValue("//categories")
+String userGroups=holder.getNodeValue("//userGroups")
+
+String views_recordid=holder.getNodeValue("//views/ViewKey/recordId")
+String views_refkey=holder.getNodeValue("//views/ViewKey/referenceKey")
+String views_name=holder.getNodeValue("//views/ViewKey/name")
+
+String recordId=holder.getNodeValue("//recordId")
+String versionId=holder.getNodeValue("//versionId")
+String  documentId=holder.getNodeValue("//documentId")
+String  version=holder.getNodeValue("//version")
+String  answerId=holder.getNodeValue("//answerId")
+
+//-----------------------------------------------------------------------------------
+
+String recordid_full="<recordId>"+recordId+"</recordId>\n"
+String versionid_full ="<versionId>"+versionId+"</versionId>\n"
+String documentid_full ="<documentId>"+documentId+"</documentId>\n"
+String version_full =" <version>"+version+"</version>\n"
+String answerId_full ="<answerId>"+answerId+"</answerId>\n"
+
+String locale="\n<locale>\n <recordId>"+locale_recordID+"</recordId>\n</locale>"	
+String contentType="\n<contentType>\n<recordId>"+contentType_recordid+"</recordId>\n<referenceKey>"+contentType_refkey+"</referenceKey>\n<name>"+contentType_name+"</name>\n</contentType>\n"
+
+String datemodified_full="\n<dateModified>"+dateModified+"</dateModified>"
+String createdate_full="\n<createDate>"+createDate+"</createDate>"
+String lastmodifiedDate_full="\n<lastModifiedDate>"+lastModifiedDate+"</lastModifiedDate>"
+String dateadded_full="\n<dateAdded>"+dateAdded+"</dateAdded>"
+
+
+
+String priority_full="\n<priority>"+priority+"</priority>"
+String startdate_full="\n<displayStartDate>"+StartDate+"</displayStartDate>"
+String enddate_full="\n<displayEndDate>"+EndDate+"</displayEndDate>"
+String published_full="\n<published>false</published>"
+String pending_full=" \n<pending>"+pending+"</pending>"
+String checkedout_full="\n<checkedOut>"+false+"</checkedOut>"
+String displayposition_full="\n<displayPosition>"+displayPosition+"</displayPosition>"
+String xml_title_full="<"+contentType_name+"><TITLE>REST EDITED "+new Date().format("yyyy-MM-dd'T'HH:mm:ss SSS")+"</TITLE>" //+"</"+contentType_name+">"
+String xml_desc_full= "<DESCRIPTION>"+new Date().format("yyyy-MM-dd'T'HH:mm:ss SSS")+"</DESCRIPTION></"+contentType_name+">"
+  
+String xml_full="\n<xml>"+xml_title_full+xml_desc_full+"</xml>"
+String isForEdit_full="\n<isForEdit>true</isForEdit>"
+String  categories_full="\n<categories>"+categories+"</categories>"
+String  userGroups_full="\n<userGroups>"+userGroups+"</userGroups>"
+
+String views_full="\n<views>\n<ViewKey>\n<recordId>"+views_recordid+"</recordId> \n<referenceKey>"+views_refkey+"</referenceKey>\n<name>"+views_name+"</name> \n</ViewKey>\n</views>"	
+
+String content_part1="<Content>\n"+recordid_full+versionid_full+documentid_full+version_full +answerId_full+locale+contentType
+String content_part2=priority_full+datemodified_full+createdate_full+lastmodifiedDate_full+dateadded_full+startdate_full+enddate_full+published_full
+String content_part3=checkedout_full+xml_full+isForEdit_full+categories_full+userGroups_full+views_full+"</Content>"
+
+String content_full=content_part1+content_part2+content_part3
+
+log.info ("Copy this to notepad++--"+content_full)
+
+testRunner.testCase.getTestStepByName("integration_data").setPropertyValue("recordid",recordId)
+testRunner.testCase.getTestStepByName("integration_data").setPropertyValue("content_edit",content_full)
+
+]]></script></con:config></con:testStep><con:testStep type="restrequest" name="Edit Content" id="56adaa30-da2c-472a-9cac-fbe88a4c7898" disabled="true"><con:settings/><con:config service="https://apitoken-irs.qb.lan" resourcePath="/km/api/latest/content/${integration_data#recordid}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Edit Content" id="48a184fc-aac9-4796-8a39-1a08b4729621" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://apitoken-irs.qb.lan</con:endpoint><con:request><![CDATA[<Content>
+      <recordId>9900FF62C628416493875443A2720ED8</recordId>
+      <versionId>DC29497A021C439A995DE8DE28235ED7</versionId>
+      <documentId>FA11</documentId>
+      <version>1.0</version>
+      <answerId>1000017</answerId>
+
+
+
+   <contentType>
+      <recordId>04007203d961fad015a7f23da09007e63</recordId>
+      <referenceKey>FAQ</referenceKey>
+      <name>FAQ</name>
+    </contentType>
+	
+	<locale>
+		<recordId>en_US</recordId>
+	</locale>
+	
+	<dateModified>2017-03-02T04:25:52-0700</dateModified>
+   <priority>PRIORITY_0</priority>
+   <createDate>2017-03-03T04:10:33-0700</createDate>
+   <lastModifiedDate>2017-03-03T04:10:33-0700</lastModifiedDate>
+   <dateAdded>2017-03-03T04:10:33-0700</dateAdded>
+   <displayStartDate>2016-08-11T07:17:00-0600</displayStartDate>
+   <displayEndDate>9999-12-31T00:00:00-0700</displayEndDate>
+ 
+ 	
+	 <published>false</published>
+	<checkedOut>false</checkedOut>
+
+   <xml><FAQ><IPHONE_NOT_REBOOTING>Running using rest</IPHONE_NOT_REBOOTING></FAQ></xml>
+
+	<isForEdit>true</isForEdit>
+	<categories />
+	<userGroups />
+	
+	<views>
+         <ViewKey>
+            <recordId>04007203d961fad015a7f23da09007e8d</recordId>
+            <referenceKey>TEST_VIEW</referenceKey>
+            <name>test_view</name>
+		</ViewKey>
+	</views>
+	
+</Content>
+ 
+]]></con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="1de854d5-4995-42b3-b697-1c3d43a79d20" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Copy of Edit Content" id="a5b73d88-279e-4a7f-8b94-bcdf4ce8fd52"><con:settings/><con:config service="https://apitoken-irs.qb.lan" resourcePath="/km/api/latest/content/${integration_data#recordid}" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Copy of Edit Content" id="48a184fc-aac9-4796-8a39-1a08b4729621" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${Count#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${integration_data#data4}</con:endpoint><con:request>${integration_data#content_edit}</con:request><con:originalUri>https://apitoken-irs.qb.lan/km/api/latest/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="1de854d5-4995-42b3-b697-1c3d43a79d20" name="Valid HTTP Status Codes"><con:configuration><codes>200,201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4bf70092-41ac-4b9b-9d64-35d0cc10a144" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Create_Products" searchProperties="true"><con:settings/><con:testStep type="properties" name="counter" id="e1335266-eb63-4a95-985e-09981c2d33ab"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>iTotal_count</con:name><con:value>3</con:value></con:property><con:property><con:name>iCurrent_count</con:name><con:value>1</con:value></con:property><con:property><con:name>id</con:name><con:value><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 404--Not Found</TITLE>
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 404--Not Found</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.4.5 404 Not Found</H4>
+</FONT><P><FONT FACE="Courier New">The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent.</p><p>If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address.</FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+]]></con:value></con:property><con:property><con:name>site</con:name><con:value>https://day27-1-product-load-test.qb.lan</con:value></con:property><con:property><con:name>password</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Call_Generic_KMauthoken_TC" id="215b9df6-63d6-4542-b359-b8dca898a769"><con:settings/><con:config><script>def project = testRunner.testCase.testSuite.project
+def GenericKmauthtoken_TC=project.testSuites['TestSuite 1'].testCases['GenericKmauthtoken']
+def CurrentTC_name=testRunner.testCase.name
+
+def kmauthtoken=GenericKmauthtoken_TC.getTestStepByName("Count").getPropertyValue("kmauthtoken")
+def endpoint=GenericKmauthtoken_TC.getTestStepByName("integration_data").getPropertyValue("data4")
+
+testRunner.testCase.setPropertyValue("endpoint",endpoint)
+testRunner.testCase.setPropertyValue("kmauthtoken",kmauthtoken)
+testRunner.testCase.setPropertyValue("endpoint2","https://apitoken-irs.qb.lan")
+
+log.info  testRunner.testCase.getPropertyValue("endpoint")
+log.info  testRunner.testCase.getPropertyValue("kmauthtoken")
+log.info  testRunner.testCase.getPropertyValue("endpoint2")</script></con:config></con:testStep><con:testStep type="restrequest" name="Create_Product" id="1c1008bf-0582-4bdf-b08c-0a90a1783be8"><con:settings/><con:config service="https://Create_POST" resourcePath="/services/rest/connect/v1.3/serviceProducts" methodName="Create_Products" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Create_Product" id="4d9cd747-a691-4269-bee2-136ca22373ba" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="kmauthtoken" value="${#TestCase#kmauthtoken}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${#TestCase#endpoint}</con:endpoint><con:request>{"names":[{"labelText":"Products Deepak","language": {"id":1}}]}</con:request><con:originalUri>https://apitoken-irs.qb.lan/services/rest/connect/v1.3/serviceProducts</con:originalUri><con:credentials><con:username>administrator</con:username><con:password>=mafbtBv</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_content_ALL" id="bde9e477-59d5-4cb2-8c2e-96b09203bfd5" disabled="true"><con:settings/><con:config service="https://day106-161100-sql-197h-irs.dv.lan" resourcePath="/km/api/latest/content" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_content_ALL" id="82107b8f-a9f9-440e-b927-ce4020099a5a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="kmauthtoken" value="${#TestCase#kmauthtoken}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${#TestCase#endpoint}</con:endpoint><con:request/><con:originalUri>http://day106-161100-sql-197h-irs.dv.lan/km/api/content</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ac7f315f-e79a-4875-8964-637f2c13c17c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="mode" value="FULL" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>mode</con:entry><con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="6689cbcc-4778-4a6a-a894-de0076e06e29"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>url</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Create_Product</con:sourceStep><con:targetType>id</con:targetType><con:targetStep>counter</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="Admin_visible" id="62cbb27d-44a6-4ec6-a238-5cf391c246c7"><con:settings/><con:config service="https://Create_POST" resourcePath="/services/rest/connect/v1.3/serviceProducts/${counter#id}/adminVisibleInterfaces" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Admin_visible" id="e4f06060-088a-4f75-bad8-14704f6519dd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${#TestCase#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#TestCase#endpoint}</con:endpoint><con:request>{"id":1}</con:request><con:originalUri>https://apitoken-irs.qb.lan/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="enduser_visible" id="fb8949ad-026d-487d-a80a-035e1113face"><con:settings/><con:config service="https://Create_POST" resourcePath="/services/rest/connect/v1.3/serviceProducts/${counter#id}/endUserVisibleInterfaces" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="enduser_visible" id="8249f40b-2e79-4c66-bd20-1ab2aaf24c4f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="kmauthtoken" value="${#TestCase#kmauthtoken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#TestCase#endpoint}</con:endpoint><con:request>{"id":1}</con:request><con:originalUri>https://apitoken-irs.qb.lan/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>endpoint</con:name><con:value>https://apitoken-irs.qb.lan</con:value></con:property><con:property><con:name>kmauthtoken</con:name><con:value>{"integrationUserToken":"YXBpdG9rZW46V2lqYVl3ZDJPcmJHeElydWNsb3pUSkhwcElFRXFaVm84MS83VENwZi9Semd3cXZSOUZjaWFTMVZmd3V0M0pCV1lyK0Z5VGpKeFVBZzJCZUcrdXRFSnRhaEtXTnhVTW0wRUJYdHFBRlZlWTZIMlUwdVhjekdJOVAwVFVqUHIxQ0RXd25tR2pyb016dFlKMWR1Z0E0RnZZMjA4QWtQYmg5VEVBTDBwdTFTQk5vPQ==","userToken":"nP1PJxgzf9KBgy2TmvQCqS579uAyb0tFZbHBOx7//QB+7gnF6FTKzdngEEG5pXp4lAkzfPqqnxNRvcCWwSO1hcVJJXNtIk2rI2cRHC5bWOOwiiS6TtR8V1Oyg+HudjxB36vggQpQmZstCXVA1LSKhQ=="}</con:value></con:property><con:property><con:name>endpoint2</con:name><con:value>https://apitoken-irs.qb.lan</con:value></con:property><con:property><con:name>endpoint3</con:name><con:value>https://apitoken-irs.qb.lan</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>iCurrent_Count</con:name><con:value>1</con:value></con:property><con:property><con:name>Testname</con:name><con:value>Add Content Test Case</con:value></con:property></con:properties></con:testSuite><con:testSuite id="3b5874b0-997e-4296-b297-9879fdd31a5f" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="042432ad-0f3c-473f-89d0-c43d0a65eb06" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="folder" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Excel" id="019396b0-7d43-404c-9d28-616710330e7b"><con:settings/><con:config><script><![CDATA[import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import org.apache.poi.hssf.usermodel.HSSFSheet
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.WorkbookFactory
+
+library = testRunner.testCase.testSuite.project.testSuites["TestSuite 1"]
+String TC_name=testRunner.testCase.testSuite.getPropertyValue("Testname")
+prop= library.testCases[TC_name].testSteps["Count"]
+String sPath=prop.getPropertyValue("excel_path")
+String sPath_result=prop.getPropertyValue("Result_Excel")
+context.setProperty( "excel", new excel( sPath,sPath_result,log, context, testRunner) )
+
+
+class excel{
+	private Workbook wb;
+	private Sheet sheet;
+	private String sPath,sPath_result;
+	def log
+ 	def context
+ 	def testRunner 
+	
+	excel(String sPath,String sPath_result,logIn,contextIn,testRunnerIn) {
+		this.log=logIn
+		this.context = contextIn
+  		this.testRunner = testRunnerIn
+		wb = WorkbookFactory.create(new FileInputStream(sPath));
+		this.sPath=sPath;
+		this.sPath_result=sPath_result;
+	}
+
+	public ArrayList<String> read_row(String Sheet_name,int row){
+		ArrayList<String> lData=new ArrayList<String>();
+		sheet=wb.getSheet(Sheet_name);		
+		for(int cols=0;cols<=sheet.getRow(row).getLastCellNum()-1;cols++)
+			lData.add(sheet.getRow(row).getCell(cols).getRichStringCellValue().toString());		
+		return lData;		
+	}
+
+	public int total_rows(String Sheet_name){
+		sheet=wb.getSheet(Sheet_name);
+		return sheet.getLastRowNum().toInteger();
+	}
+
+	public void write_data(String Sheet_name,int row,String sData){
+	sheet=wb.getSheet(Sheet_name);
+	int last_cell=sheet.getRow(row).getLastCellNum();
+	sheet.getRow(row).createCell(last_cell).setCellValue(sData);
+	wb.write(new  FileOutputStream(this.sPath_result));
+	}
+	
+	public void write_column_data(String Sheet_name,ArrayList<String> lData){
+		sheet=wb.getSheet(Sheet_name);
+		int last_cell=sheet.getRow(1).getLastCellNum();
+
+		for(int i=0;i<=lData.size()-1;i++)
+			sheet.getRow(i+1).createCell(last_cell).setCellValue(lData.get(i));
+		wb.write(new  FileOutputStream(sPath_result));
+	}
+	
+	public void close_excel() throws IOException{
+		wb.close();
+	}	
+}
+]]></script></con:config></con:testStep><con:testStep type="groovy" name="Property_lib" id="06d4309d-ce02-4fdb-abf7-f52a5a0e6c8b"><con:settings/><con:config><script>//library = testRunner.testCase.testSuite.project.testSuites["TestSuite 1"]
+//String TC_name=testRunner.testCase.testSuite.getPropertyValue("Testname")
+//
+//
+//prop= library.testCases[TC_name].testSteps["Count"]
+//String Count_file=prop.getPropertyValue("excel_path")
+//String integration_file=prop.getPropertyValue("excel_path")
+//String authentication_file=prop.getPropertyValue("excel_path")
+
+//String TC_name=com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("Testname")
+//log.info(testRunner.testCase.testSuite.getPropertyValue("Testname"))
+
+context.setProperty("Property", new Properties_file(testRunner,context,log,"TestSuite 1") )
+//context.setProperty("Property", new Properties_file(testRunner,context,log,"TestSuite 1","GET test cases") )
+//context.setProperty("Property_operation", new Properties_file(testRunner,context,log,"TestSuite 1") )
+
+class Properties_file{
+	def log
+ 	def context
+ 	def testRunner
+ 	def library,Property_File 
+	
+	Properties_file(testRunner,context,log,String Suite_name){
+		this.testRunner=testRunner;
+		this.log=log
+		this.context=context
+		
+		library = testRunner.testCase.testSuite.project.testSuites[Suite_name]
+		//Property_File = library.testCases[TC_name].testSteps[testStep_name]
+		//Property_File = library.testCases[TC_name]
+		//log.info("working")
+		Property_File = library.testCases[testRunner.testCase.testSuite.getPropertyValue("Testname")]  // &lt;&lt; square brackets here 
+	
+	}
+
+	public void set_data(ArrayList&lt;String> lData ,String Property_name){
+		//def Property_File=testRunner.testCase.getTestStepByName(Property_name);		
+		int i=0;
+		for(String s:lData){
+			Property_File.testSteps[Property_name].setPropertyValue("data"+i, s.toString().trim())
+			i=i+1;
+		}					
+	}	
+
+	public void Total_Count(String property_name,int i){		
+		Property_File.testSteps["Count"].setPropertyValue(property_name,i.toString())
+	}
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
